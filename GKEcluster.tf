@@ -75,5 +75,5 @@ output "namespace" {
 
 output "gcp_cluster_name"{
     
-    value = ${google_container_cluster.primary.name}
+    value = "${google_container_cluster.primary.name}"
     }
