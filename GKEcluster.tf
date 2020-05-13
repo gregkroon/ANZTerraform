@@ -1,9 +1,11 @@
+variable "region" {
+    region = var.region 
+    }
+
 provider "google" {
   
   
-  variable "region" {
-    region = var.region 
-    }
+ 
   
   credentials = "/Users/gregorykroon/Downloads/anzbank-fa4ce11ca2b5.json"
   project     = "anzbank"
