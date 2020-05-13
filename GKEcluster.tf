@@ -68,3 +68,12 @@ resource "google_container_cluster" "primary" {
     update = "40m"
   }
 }
+
+output "namespace" {
+    value = "default"
+    }
+
+output "gcp_cluster_name"{
+    
+    value = ${google_container_cluster.primary.name}
+    }
