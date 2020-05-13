@@ -1,36 +1,41 @@
 variable "region" {
-    region = var.region 
+    type = string
     }
 
 variable "credentials" {
-    credentials = var.credentials 
+    type = string
     }
 
 variable "project" {
-    project = var.project 
+    type = string
     }
 
 variable "name" {
-    name = var.name
+    type = string
     }
 
 variable "location" {
-    location = var.location
+    type = string
     }
 
 variable "initial_node_count" {
-    initial_node_count = var.initial_node_count
+    type = string
     }
 
 
 
 provider "google" {
+    
+    project = var.project
+    credentials = var.credentials
+    location = var.region
+    
 }
 
 resource "google_container_cluster" "primary" {
-  #name               = "harnessterraform"
-  #location           = "asia-southeast1-a"
-  #initial_node_count = 1
+  name = var.name
+  location = var.location
+  initial_node_count = var.initial_node_count
 
   master_auth {
     username = ""
