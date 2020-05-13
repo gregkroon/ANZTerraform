@@ -2,20 +2,35 @@ variable "region" {
     region = var.region 
     }
 
+variable "credentials" {
+    credentials = var.credentials 
+    }
+
+variable "project" {
+    project = var.project 
+    }
+
+variable "name" {
+    name = var.name
+    }
+
+variable "location" {
+    location = var.location
+    }
+
+variable "initial_node_count" {
+    initial_node_count = var.initial_node_count
+    }
+
+
+
 provider "google" {
-  
-  
- 
-  
-  credentials = "/Users/gregorykroon/Downloads/anzbank-fa4ce11ca2b5.json"
-  project     = "anzbank"
-  #region      = "asia-southeast1-a"
 }
 
 resource "google_container_cluster" "primary" {
-  name               = "harnessterraform"
-  location           = "asia-southeast1-a"
-  initial_node_count = 1
+  #name               = "harnessterraform"
+  #location           = "asia-southeast1-a"
+  #initial_node_count = 1
 
   master_auth {
     username = ""
