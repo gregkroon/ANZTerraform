@@ -28,7 +28,7 @@ provider "google" {
     
     project = var.project
     credentials = var.credentials
-    location = var.region
+    region = var.region
     
 }
 
