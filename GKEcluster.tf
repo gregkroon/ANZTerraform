@@ -80,5 +80,5 @@ output "gcp_cluster_name"{
 
 output "fqn" {
     
-    value = "${var.region}/${var.gcp_cluster_name}"
+    value = "asia-southeast1-a/anzcluster"
     }
