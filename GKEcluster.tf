@@ -75,7 +75,7 @@ output "namespace" {
 
 output "gcp_cluster_name"{
     
-    value = "${google_container_cluster.primary.name}"
+    value = "asia-southeast1-a/anzcluster"
     }
 
 output "fqn" {
