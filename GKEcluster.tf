@@ -77,3 +77,8 @@ output "gcp_cluster_name"{
     
     value = "${google_container_cluster.primary.name}"
     }
+
+output "fqn" {
+    
+    value = "${var.region}/${var.gcp_cluster_name}"
+    }
