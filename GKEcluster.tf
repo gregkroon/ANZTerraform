@@ -75,10 +75,10 @@ output "namespace" {
 
 output "gcp_cluster_name"{
     
-    value = "asia-southeast1-a/anzcluster"
+    value = "asia-southeast1-a/anznewcluster"
     }
 
 output "fqn" {
     
-    value = "asia-southeast1-a/anzcluster"
+    value = "asia-southeast1-a/anznewcluster"
     }
